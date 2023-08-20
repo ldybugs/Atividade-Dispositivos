@@ -5,9 +5,29 @@
     <title>Atividade Pwa</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Calculadora</h1>
+    <h1>Calculadora IMC</h1>
+    <div class="inputs">
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome"/>
+        <label>Idade:</label>
+        <input type="text" name="idade" placeholder="Digite sua idade"/>
+        <label>Sexo:</label>
+            <select id="sexo" name="sexo">
+              <option value="MASCULINO">Masculino</option>
+              <option value="FEMININO">Feminino</option>
+            </select>
+        <label>Altura:</label>
+        <input type="number" name="altura" placeholder="Digite sua altura"/>
+        <label>Peso:</label>
+        <input type="number" name="peso" placeholder="Digite seu peso" />
+
+        <button type="button" onclick="calcular()">
+            Calcular IMC
+          </button>
+    </div>
 </body>
 </html>
