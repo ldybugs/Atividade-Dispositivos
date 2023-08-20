@@ -5,29 +5,49 @@
     <title>Atividade Pwa</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/main.js"></script>
     <title>Document</title>
 </head>
 <body>
+    
     <h1>Calculadora IMC</h1>
-    <div class="inputs">
+    <div class="tudo">
+        <div class="inputs">
         <label>Nome:</label>
-        <input type="text" name="nome" placeholder="Digite seu nome"/>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome"/>
         <label>Idade:</label>
-        <input type="text" name="idade" placeholder="Digite sua idade"/>
+        <input type="text" id="idade" name="idade" placeholder="Digite sua idade"/>
         <label>Sexo:</label>
             <select id="sexo" name="sexo">
               <option value="MASCULINO">Masculino</option>
               <option value="FEMININO">Feminino</option>
             </select>
         <label>Altura:</label>
-        <input type="number" name="altura" placeholder="Digite sua altura"/>
+        <input type="number" id="altura" name="altura" placeholder="Digite sua altura"/>
         <label>Peso:</label>
-        <input type="number" name="peso" placeholder="Digite seu peso" />
+        <input type="number" id="peso" name="peso" placeholder="Digite seu peso" />
 
-        <button type="button" onclick="calcular()">
+        <button id="calculo" type="button" onclick="calculo()">
             Calcular IMC
           </button>
+        </div>
+
+        <div class="results">
+        <div class="top">
+            <h1 id="nomeresult"></h1>
+            <h1 id="idaderesult"></h1>
+        </div>
+          <h1 id="sexoresult"></h1>
+
+          <div class="pesoAltura">
+            <h1 id="alturaresult"></h1>
+            <h1 id="pesoresult"></h1>
+          </div>
+        </div>
+        O IMC do paciente é:
+        <h1 id="results">0</h1>
+        <h1 id="tabela"></h1>
+        </div>
+        <script src="js/main.js"></script>
     </div>
 </body>
 </html>
