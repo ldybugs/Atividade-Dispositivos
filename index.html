@@ -12,52 +12,54 @@
 </head>
 <body>
   <div class="container">
-    <h1>Calculadora de IMC</h1>
+    <h1 class="titulo">Calculadora de IMC</h1>
     <div class="campos">
-      <label for="nome">NOME:</label>
+      <label for="nome">Nome:</label><br/>
       <input type="text" id="nome" name="nome" placeholder="Digite o seu nome"/>
     <div class="inputs">
-        <div class="inputGroup">
-          <label for="idade">IDADE:</label>
+        <div>
+          <label for="idade">Idade:</label><br/>
           <input type="text" id="idade" name="idade" placeholder="Digite a sua idade"/>
         </div>
-        <div class="inputGroup">
-          <label for="sexo">SEXO:</label>
+        <div>
+          <label for="sexo">Sexo:</label><br/>
           <select id="sexo" name="sexo">
-            <option value="MASCULINO">Masculino</option>
-            <option value="FEMININO">Feminino</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
           </select>
         </div>
-        <div class="inputGroup">
-          <label for="altura">ALTURA:</label>
+        <div>
+          <label for="altura">Altura:</label><br/>
           <input type="number" id="altura" name="altura" placeholder="Digite a sua altura"/>
         </div>
-        <div class="inputGroup">
-          <label for="peso">PESO:</label>
+        <div>
+          <label for="peso">Peso:</label><br/>
           <input type="number" id="peso" name="peso" placeholder="Digite o seu peso"/>
         </div>
       </div>
-      <button id="calcular" type="button" onclick="calcular()">
-        Calcular 
+      <button class="button" id="calculo" type="button" onclick="calculo()">
+        <span>Calcular </span>
       </button>
     </div>
 
     <div class="results">
-      <div class="cima" id="cima">
+      <div class="top" id="top">
         <div class="nomeIdade">
-          <h1 id="nomeresult"></h1>
-          <h1 id="idaderesult"></h1>
+          <h1>PACIENTE:</h1>
+          <p id="nomeresult"></p>
+          <p id="idaderesult"></p>
         </div>
-        <h1 id="sexoresult"></h1>
+        <p class="nomeIdade" id="sexoresult"></p>
 
         <div class="pesoAltura">
-          <h1 id="alturaresult"></h1>
-          <h1 id="pesoresult"></h1>
+          <p id="alturaresult"></p>
+          <p id="pesoresult"></p>
+          
         </div>
       </div>
-      O IMC do paciente é:
-      <h1 id="resultado">0</h1>
-      <h1 id="listado"></h1>
+      <h1>O IMC do paciente é:</h1>
+      <h1 class="numeroimc" id="results"></h1>
+      <p id="listado"></p>
     </div>
   </div>
   <script src="js/main.js"></script>

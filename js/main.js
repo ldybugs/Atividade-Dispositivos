@@ -5,7 +5,7 @@ window.onload = () => {
   }
 };
 
-function calcular() {
+function calculo() {
   const nome = document.getElementById("nome").value;
   const idade = document.getElementById("idade").value;
   const sexo = document.getElementById("sexo").value;
@@ -14,10 +14,10 @@ function calcular() {
 
   const imc = peso / (altura * altura);
 
-  nomeresult.textContent = nome + ", ";
+  nomeresult.textContent = nome;
   idaderesult.textContent = idade + " anos";
   sexoresult.textContent = sexo;
-  alturaresult.textContent = altura + "m -";
+  alturaresult.textContent = altura + "m";
   pesoresult.textContent = peso + "kg";
   results.textContent = Math.floor(imc);
 

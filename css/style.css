@@ -1,3 +1,93 @@
 body{
-    background-color: red;
+    background: url("https://i.pinimg.com/564x/39/e6/90/39e690b27b3803237ca94fabd48d1493.jpg");
+}
+h1, h2 {
+    text-align: center;
+}
+.container {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.campos {
+    background-color: #1b1e41;
+    width: 40%;
+    height: 410px;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: block;
+    border: NONE;
+    border-radius: 15px;
+    box-shadow: 30px 30px 30px 15px rgba(0, 0, 0, 0.2), 30px 30px 30px 15px rgba(0,0,0,0.19);
+}
+input {
+    width: 35%;
+    height: 10px;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+select, option {
+    width: 40%;
+    height: 15px;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+label {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: white;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #91c581;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 16px;
+    font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .titulo {
+ color: #91c581;
+ font-weight: bold;
+ font-size: 40px;
+}
+.numeroimc {
+    color: red;
 }
